@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <title>Научный журнал</title>
+</head>
+<body>
+<h1>Научный журнал</h1>
+<div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Введите название статьи...">
+    <button id="searchBtn" class="btn">Поиск</button>
+</div>
+<div class="author-search-container">
+    <select id="authorSelect" class="author-select">
+        <option value="">Выберите автора...</option>
+    </select>
+    <button id="searchAuthorBtn" class="btn">Поиск</button>
+</div>
+<button id="showArticlesBtn" class="btn">Список всех статей</button>
+<div id="articlesContainer" style="display: none;">
+    <h2>Список статей</h2>
+    <p id="temp"></p>
+    <table>
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Авторы</th>
+            <th>Дата публикации</th>
+        </tr>
+        </thead>
+        <tbody id="articlesTableBody"></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
