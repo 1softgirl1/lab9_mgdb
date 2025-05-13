@@ -18,7 +18,23 @@
     </select>
     <button id="searchAuthorBtn" class="btn">Поиск</button>
 </div>
-<button id="showArticlesBtn" class="btn">Список всех статей</button>
+<div>
+    <label for="startDate">Дата начала:</label>
+    <input type="date" id="startDate">
+
+    <label for="endDate">Дата окончания:</label>
+    <input type="date" id="endDate">
+    <button id="searchByDateButton" class="btn">Поиск</button>
+</div>
+<div class="action-buttons">
+    <button id="showArticlesBtn" class="btn">Список всех статей</button>
+    <button id="createArticleBtn" class="btn">Создать новую статью</button>
+    <button id="topArticlesButton" class="btn">Топ статей</button>
+</div>
+
+<div id="searchResultsContainer"></div>
+
+<div id="topArticlesContainer" style="display: none;" ></div>
 <div id="articlesContainer" style="display: none;">
     <h2>Список статей</h2>
     <p id="temp"></p>
@@ -29,6 +45,7 @@
             <th>Название</th>
             <th>Авторы</th>
             <th>Дата публикации</th>
+            <th>Действия</th>
         </tr>
         </thead>
         <tbody id="articlesTableBody"></tbody>
